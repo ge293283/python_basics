@@ -31,7 +31,7 @@ while consentToTheGame == "y":
         print("{},викторина состоит из {} вопросов.".format(user_name, num_of_questions),"НАЧИНАЕМ!\n")
         user_attempt += 1
     else:
-        print("{},викторина состоит из {} вопросов.".format(user_name, num_of_questions),"Попытка №", user_attempt, "\n")
+        print("{},викторина состоит из {} вопросов. Попытка № {}.\n".format(user_name, num_of_questions, user_attempt))
     # Define a counter for the loop
     counter = 0
     # Until we ask all the questions, we do not exit the cycle
@@ -89,7 +89,6 @@ while consentToTheGame == "y":
     # If you agree, increase the number of attempts by 1, otherwise we offer to show the answers
     if consentToTheGame == 'y':
         user_attempt += 1
-        print("{}, Ваша попытка № {}".format(user_name, user_attempt))
     else:
         answers = input("{}, показать правельные ответы? y/n: ".format(user_name, user_attempt))
         print()
